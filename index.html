@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shine Beauty & Bridal Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Cormorant Garamond (cursive/elegant) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- Remix Icons for service icons & social media -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER / NAVBAR
+  ============================================================ -->
+  <header class="header" id="header">
+    <nav class="nav container">
+
+      <!-- Logo -->
+      <a href="#home" class="nav__logo">
+        <!-- Replace logo.png with your actual logo image -->
+        <img src="logo.png" alt="Shine Beauty Logo" class="nav__logo-img"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+        <span class="nav__logo-text" style="display:none">
+          <span class="logo-shine">Shine</span>
+          <span class="logo-sub">Beauty & Bridal Studio</span>
+        </span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home"     class="nav__link">Home</a></li>
+        <li><a href="#about"    class="nav__link">About</a></li>
+        <li><a href="#services" class="nav__link">Services</a></li>
+        <li><a href="#gallery"  class="nav__link">Gallery</a></li>
+        <li><a href="#contact"  class="nav__link">Contact</a></li>
+      </ul>
+
+      <!-- CTA + Hamburger -->
+      <div class="nav__actions">
+        <a href="#contact" class="btn btn--primary">Book Now</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </nav>
+  </header>
+
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero" id="home">
+    <!-- Decorative rose-gold lines -->
+    <div class="hero__deco hero__deco--left"></div>
+    <div class="hero__deco hero__deco--right"></div>
+
+    <div class="hero__content container">
+      <p class="hero__eyebrow">Enhancing Your Natural Glow</p>
+      <h1 class="hero__title">
+        Where Beauty<br />
+        <em>Meets Elegance</em>
+      </h1>
+      <p class="hero__desc">
+        Step into a world of refined luxury. We craft bespoke beauty experiences
+        that celebrate your unique radiance — from bridal transformations to everyday glow.
+      </p>
+      <div class="hero__cta">
+        <a href="#contact"  class="btn btn--primary">Book Appointment</a>
+        <a href="#services" class="btn btn--outline">View Services</a>
+      </div>
+    </div>
+
+    <!-- Floating badge -->
+    <div class="hero__badge">
+      <span class="badge__number">500+</span>
+      <span class="badge__label">Happy Brides</span>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SERVICES SECTION
+  ============================================================ -->
+  <section class="services" id="services">
+    <div class="container">
+
+      <div class="section-header">
+        <p class="section-tag">What We Offer</p>
+        <h2 class="section-title">Our <em>Signature</em> Services</h2>
+        <p class="section-desc">Every service is a ritual, performed with passion and precision to enhance your natural beauty.</p>
+      </div>
+
+      <div class="services__grid">
+
+        <!-- Bridal Makeup -->
+        <div class="service-card" data-delay="0">
+          <div class="service-card__icon">
+            <i class="ri-hearts-line"></i>
+          </div>
+          <div class="service-card__img-wrap">
+            <div class="service-card__img service-card__img--bridal"></div>
+          </div>
+          <div class="service-card__body">
+            <h3>Bridal Makeup</h3>
+            <p>Bespoke bridal looks tailored to your vision — from classic to contemporary, ensuring you shine on your special day.</p>
+            <a href="#contact" class="service-card__link">Enquire <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+        <!-- Hair Styling -->
+        <div class="service-card" data-delay="100">
+          <div class="service-card__icon">
+            <i class="ri-scissors-line"></i>
+          </div>
+          <div class="service-card__img-wrap">
+            <div class="service-card__img service-card__img--hair"></div>
+          </div>
+          <div class="service-card__body">
+            <h3>Hair Styling</h3>
+            <p>From elegant updos to bold transformations, our stylists craft hairstyles that complement your personality perfectly.</p>
+            <a href="#contact" class="service-card__link">Enquire <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+        <!-- Facial -->
+        <div class="service-card" data-delay="200">
+          <div class="service-card__icon">
+            <i class="ri-sparkling-line"></i>
+          </div>
+          <div class="service-card__img-wrap">
+            <div class="service-card__img service-card__img--facial"></div>
+          </div>
+          <div class="service-card__body">
+            <h3>Facial Treatments</h3>
+            <p>Rejuvenating facials using premium products that cleanse, hydrate, and restore your skin's natural luminosity.</p>
+            <a href="#contact" class="service-card__link">Enquire <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+        <!-- Skincare -->
+        <div class="service-card" data-delay="300">
+          <div class="service-card__icon">
+            <i class="ri-leaf-line"></i>
+          </div>
+          <div class="service-card__img-wrap">
+            <div class="service-card__img service-card__img--skin"></div>
+          </div>
+          <div class="service-card__body">
+            <h3>Skincare & Glow</h3>
+            <p>Advanced skincare rituals designed to nourish, protect, and reveal the most radiant version of your skin.</p>
+            <a href="#contact" class="service-card__link">Enquire <i class="ri-arrow-right-line"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       GALLERY SECTION
+  ============================================================ -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+
+      <div class="section-header section-header--light">
+        <p class="section-tag section-tag--light">Our Work</p>
+        <h2 class="section-title section-title--light">Beauty in <em>Every Frame</em></h2>
+        <p class="section-desc section-desc--light">A curated glimpse into the transformations we create every day.</p>
+      </div>
+
+      <div class="gallery__grid">
+        <!-- Each cell uses a CSS gradient as placeholder; swap background-image for real photos -->
+        <div class="gallery__item gallery__item--tall"   data-label="Bridal Look"></div>
+        <div class="gallery__item"                       data-label="Hair Art"></div>
+        <div class="gallery__item"                       data-label="Glow Facial"></div>
+        <div class="gallery__item gallery__item--wide"   data-label="Studio Setup"></div>
+        <div class="gallery__item"                       data-label="Skin Ritual"></div>
+        <div class="gallery__item gallery__item--tall"   data-label="Elegant Updo"></div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section class="about" id="about">
+    <div class="container about__grid">
+
+      <!-- Visual column -->
+      <div class="about__visual">
+        <div class="about__img-main"></div>
+        <div class="about__img-accent"></div>
+        <!-- Floating stat -->
+        <div class="about__stat">
+          <span class="stat-num">12+</span>
+          <span class="stat-label">Years of Excellence</span>
+        </div>
+      </div>
+
+      <!-- Text column -->
+      <div class="about__content">
+        <p class="section-tag">Our Story</p>
+        <h2 class="section-title">A Studio Built on <em>Passion & Craft</em></h2>
+        <p class="about__text">
+          Founded over a decade ago, Shine Beauty & Bridal Studio was born from a single belief — every woman deserves to feel extraordinary. Nestled in the heart of the city, our studio is a sanctuary where artistry meets luxury.
+        </p>
+        <p class="about__text">
+          Our team of award-winning artists and stylists brings years of expertise, ongoing education, and genuine passion to every appointment. Whether you're preparing for your wedding day or indulging in a self-care ritual, we promise an experience as beautiful as the results.
+        </p>
+        <div class="about__pillars">
+          <div class="pillar">
+            <i class="ri-award-line"></i>
+            <span>Award-Winning Artists</span>
+          </div>
+          <div class="pillar">
+            <i class="ri-leaf-line"></i>
+            <span>Premium, Clean Products</span>
+          </div>
+          <div class="pillar">
+            <i class="ri-heart-line"></i>
+            <span>Personalised Experience</span>
+          </div>
+        </div>
+        <a href="#services" class="btn btn--primary">Explore Services</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section class="contact" id="contact">
+    <div class="container contact__grid">
+ 
+      <!-- Info column -->
+      <div class="contact__info">
+        <p class="section-tag">Get in Touch</p>
+        <h2 class="section-title">Book Your <em>Appointment</em></h2>
+        <p class="contact__intro">We'd love to meet you. Reach out to schedule a consultation or book your next beauty session.</p>
+ 
+        <ul class="contact__details">
+          <li>
+            <span class="contact__icon"><i class="ri-phone-line"></i></span>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+919910711437">+91 9910711437</a>
+            </div>
+          </li>
+          <li>
+            <span class="contact__icon"><i class="ri-mail-line"></i></span>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:shinebeautystudio33@gmail.com">shinebeautystudio33@gmail.com</a>
+            </div>
+          </li>
+          <li>
+            <span class="contact__icon"><i class="ri-map-pin-line"></i></span>
+            <div>
+              <strong>Studio Address</strong>
+              <span>1052, 16th avenue gaur city-2,<br />Noida, Uttar Pradesh 201009</span>
+            </div>
+          </li>
+          <li>
+            <span class="contact__icon"><i class="ri-time-line"></i></span>
+            <div>
+              <strong>Studio Hours</strong>
+              <span>Mon – Sat: 9 AM – 8 PM<br />Sunday: 10 AM – 8 PM</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+ 
+      <!-- Form column -->
+       <input type="hidden" name="shine" value="booking">
+      <div class="contact__form-wrap">
+
+  <form id="contactForm">
+
+    <!-- hidden booking tag -->
+    <input type="hidden" name="shine" value="booking">
+
+    <!-- Name -->
+    <div class="form-row">
+      <div class="form-group">
+        <label>First Name</label>
+        <input type="text" name="fname" required>
+      </div>
+
+      <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" name="lname" required>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label>Phone</label>
+      <input type="tel" name="phone">
+    </div>
+
+    <!-- Date -->
+    <div class="form-group">
+      <label>Appointment Date</label>
+      <input type="date" name="appointment_date" required>
+    </div>
+
+    <!-- Time Slots -->
+    <div class="form-group">
+      <label>Appointment Time</label>
+      <select name="appointment_time" required>
+        <option value="">Select Time Slot</option>
+        <option>10:00 AM</option>
+        <option>11:00 AM</option>
+        <option>12:00 PM</option>
+        <option>1:00 PM</option>
+        <option>2:00 PM</option>
+        <option>3:00 PM</option>
+        <option>4:00 PM</option>
+        <option>5:00 PM</option>
+        <option>6:00 PM</option>
+        <option>7:00 PM</option>
+        <option>8:00 PM</option>
+      </select>
+    </div>
+
+    <!-- Services -->
+    <div class="form-group">
+      <label>Service of Interest</label>
+      <select name="service" required>
+        <option value="">Select Service</option>
+        <option>Bridal Makeup</option>
+        <option>Party Makeup</option>
+        <option>Hair Styling</option>
+        <option>Facial Treatment</option>
+        <option>Skincare & Glow</option>
+        <option>Waxing / Cleanup</option>
+        <option>Full Package</option>
+      </select>
+    </div>
+
+    <!-- Message -->
+    <div class="form-group">
+      <label>Message</label>
+      <textarea name="message" rows="4" placeholder="Any special request..."></textarea>
+    </div>
+
+    <!-- Submit -->
+    <button type="submit" class="btn btn--primary btn--full">
+      Send Booking
+    </button>
+
+  </form>
+
+</div>
+
+    </div>
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+
+      <!-- Brand blurb -->
+      <div class="footer__brand">
+        <span class="footer__logo"><span class="logo-shine">Shine</span> Beauty & Bridal</span>
+        <p>Enhancing Your Natural Glow — one face at a time.</p>
+      </div>
+
+      <!-- Quick links -->
+      <div class="footer__links">
+        <p class="footer__heading">Quick Links</p>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social media -->
+      <div class="footer__social">
+        <p class="footer__heading">Follow Us</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"  class="social-icon"><i class="ri-instagram-line"></i></a>
+          <a href="#" aria-label="Facebook"   class="social-icon"><i class="ri-facebook-circle-line"></i></a>
+          <a href="#" aria-label="YouTube"    class="social-icon"><i class="ri-youtube-line"></i></a>
+          <a href="#" aria-label="Pinterest"  class="social-icon"><i class="ri-pinterest-line"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span id="year"></span> Shine Beauty & Bridal Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
